@@ -11,29 +11,94 @@
   font-style: normal;
 }
 
-h1 {
+.body {
   font-family: "lovelynregular";
   font-style: normal;
   font-weight: 400;
-  font-size: 3.5vw;
+  font-size: 3vw;
   line-height: 54px;
 
   letter-spacing: 0.14em;
 
-  color: #2b5b70;
 
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  color: #d0e0df;
+
 }
 
-#TopText {
+.b15 {
+  border-radius:15px;
+}
+
+.b20 {
+  border-radius :20px;
+}
+
+.b30 {
+  border-radius:30px;
+}
+
+.firstpage {
+  display: flex;
+}
+
+.firstpage__leftside{
+  
+  color: #2b5b70;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.firstpage__leftside__toptext {
   margin-top: 10.4vh;
   margin-left: 15.5vw;
 }
 
-#BotText {
-  margin-top: 2.5vh;
+.firstpage__leftside__bottext {
+  margin-top: 1vh;
   margin-left: 21.9vw;
 }
-.App {
-  color: #d0e0df;
+
+.firstpage__leftside__image {
+  width: 62.5vw;
+  filter: drop-shadow(11px 11px 8px rgba(0, 0, 0, 0.25));
+  border-radius: 20px;
+}
+
+.shadow {
+  filter: drop-shadow(11px 11px 8px rgba(0, 0, 0, 0.25));
+}
+
+.firstpage__rightside__image {
+  width :18.75vw;
+}
+
+.secondpage {
+  display: flex;
+}
+
+.secondpage__leftside {
+  width: 29.74vw;
+}
+
+.secondpage__rightside {
+  width: 55.46vw;
+}
+
+.thirdpage {
+  display: flex;
+}
+
+.thirdpage__leftside {
+  width: 29.38vw;
+}
+
+.thirdpage__middle {
+  width: 20.57vw;
+}
+
+.thirdpage__rightside {
+  width: 20.83vw;
 }
