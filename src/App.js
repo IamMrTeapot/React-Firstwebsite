@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react";
 import "./App.css";
 import blue1 from "./photos/firstpage_1.jpg"
 import blue2 from "./photos/firstpage_2.jpg"
@@ -8,8 +9,27 @@ import green2 from "./photos/thirdpage_2.jpg"
 import green3 from "./photos/thirdpage_3.jpg"
 
 function App() {
+  const bodyRef = useRef(null);
+  function bgChanger() {
+    console.log("working");
+    if(this.scrollY > this.innerHeight/1.3) {
+      bodyRef.current.classList.add("bg-active-one");
+    } else if (this.scrollY > (this.innerHeight/2+this.innerHeight/1.3)) {
+
+      bodyRef.current.classList.add("bg-active-two")
+    } else {
+      bodyRef.current.classList.remove("bg-active-one");
+      bodyRef.current.classList.remove("bg-active-two");
+    }
+  };
+
+  useEffect(()=>{
+    window.addEventListener("scroll",bgChanger)
+  },[])
+
+
   return (
-    <div className="body">
+    <div className="body" ref={bodyRef}>  
       <div className="firstpage">
         <div className="firstpage__leftside">
           <div className="firstpage__leftside__toptext">The Random</div>
@@ -20,7 +40,7 @@ function App() {
         </div>
         <div className="firstpage__rightside">
           <div className="firstpage__rightside__image">
-          <img src={blue2} alt="blue2" width="100%" className="shadow b30"/>
+            <img src={blue2} alt="blue2" width="100%" className="shadow b30"/>
           </div>        
         </div>
       </div>

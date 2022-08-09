@@ -23,7 +23,8 @@
 
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
-  color: #d0e0df;
+  background-color: #d0e0df;
+  transition: all 0.5s ease;
 
 }
 
@@ -41,11 +42,11 @@
 
 .firstpage {
   display: flex;
+  margin-bottom: 25vh;
 }
 
 .firstpage__leftside{
   
-  color: #2b5b70;
   display: flex;
   flex-direction: column;
   
@@ -65,6 +66,9 @@
   width: 62.5vw;
   filter: drop-shadow(11px 11px 8px rgba(0, 0, 0, 0.25));
   border-radius: 20px;
+  margin-top: 4.5vh;
+  margin-left: 7.8vw;
+
 }
 
 .shadow {
@@ -73,18 +77,25 @@
 
 .firstpage__rightside__image {
   width :18.75vw;
+  margin-left: 6vw;
+  margin-top: 10.4vh;
 }
 
 .secondpage {
   display: flex;
+  margin-bottom: 25vh;
 }
 
 .secondpage__leftside {
   width: 29.74vw;
+  margin-top: 10vh;
+  margin-left: 6.7vw;
 }
 
 .secondpage__rightside {
   width: 55.46vw;
+  margin-top: 35vh;
+  margin-left: 4.2vw;
 }
 
 .thirdpage {
@@ -93,12 +104,27 @@
 
 .thirdpage__leftside {
   width: 29.38vw;
+  margin-top: 10.8vh;
+  margin-left: 4.8vw;
+  margin-bottom: 2vh;
 }
 
 .thirdpage__middle {
   width: 20.57vw;
+  margin-top: 10.8vh;
+  margin-left: 14.9vw;
 }
 
 .thirdpage__rightside {
   width: 20.83vw;
+  margin-top: 17.8vh;
+  margin-left: 3.1vw;
+}
+
+.bg-active-one {
+  background-color: #D6CAE2;
+}
+
+.bg-active-two {
+  background-color: #C0CDCB;
 }
